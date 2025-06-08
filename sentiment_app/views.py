@@ -14,6 +14,7 @@ def feedback_form(request):
         else:
             print("Form is invalid:", form.errors)
     else:
-        form = FeedbackForm()
+        form = FeedbackForm() 
+        print('hey')
         print("GET request — showing blank form")
     return render(request, 'feedback_form.html', {'form': form})
